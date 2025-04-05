@@ -22,7 +22,7 @@ feature_ranges = {
     "glycated_hemoglobin__2": {"type": "numerical", "min": 3.5, "max": 12.2, "default": 5.0},
     "cystatin_c__2": {"type": "numerical", "min": 0.40, "max": 3.57, "default": 2.00},
     "Depression_category": {"type": "categorical", "options": [1, 2]},
-    "egfr_w1_": {"type": "numerical", "min": 18.17, "max": 150.33, "default": 10.00},
+    "egfr_w1_": {"type": "numerical", "min": 18.17, "max": 150.33, "default": 50.00},
 }
 
 # Streamlit 界面
