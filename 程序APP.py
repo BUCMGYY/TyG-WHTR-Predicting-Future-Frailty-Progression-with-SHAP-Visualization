@@ -10,7 +10,7 @@ model = joblib.load('RF.pkl')
 
 # 特征范围定义（根据提供的特征范围和数据类型）
 feature_ranges = {
-    "tyg_whtr_w1_": {"type": "numerical", "min": 0.49, "max": 23.73, "default": 10.00},
+    "tyg_whtr_w1_": {"type": "numerical", "min": 0.49, "max": 23.73, "default": 3.00},
     "Age": {"type": "numerical", "min": 45.0, "max": 101.0, "default": 50.0},
     "BMI": {"type": "numerical", "min": 5.3, "max": 542.6, "default": 100.0},
     "Education_Status": {"type": "categorical", "options": [1, 2]},
@@ -59,7 +59,7 @@ if st.button("Predict"):
     probability = predicted_proba[predicted_class] * 100
 
     # 显示预测结果，使用 Matplotlib 渲染指定字体
-    text = f"Based on feature values, predicted possibility of AKI is {probability:.2f}%"
+    text = f"Based on feature values, predicted possibility of FI is {probability:.2f}%"
     fig, ax = plt.subplots(figsize=(8, 1))
     ax.text(
         0.5, 0.5, text,
